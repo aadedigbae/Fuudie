@@ -1,5 +1,7 @@
 # Predicting Meal Orders with Machine Learning
 
+## <a name="LInk to Video Presentation" href="https://www.loom.com/share/45e58e4575f84a12ab373b8c75ebfe3c?t=6&sid=0d212311-cb4d-41ab-8693-1159021a6395">Link to Video Presentation</a>
+
 ## Problem Statement
 This project aims to predict the number of orders (`num_orders`) for meals using data from fulfillment centers, meal information, and historical trends. The dataset includes features such as meal categories, cuisines, center types, and pricing information. The goal is to build and evaluate machine learning models to accurately predict the target variable (`num_orders`).
 
@@ -57,8 +59,3 @@ The table below summarizes the performance of the models on the test set:
    cd <repository_name>
 
 
-## Link to Video Presentation
-1. Clone the repository:
-   ```bash
-   git clone <repository_link>
-   cd <repository_name>
