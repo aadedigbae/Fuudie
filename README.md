@@ -131,15 +131,3 @@ conda activate meal_forecast
 pip install -r requirements.txt
 ```
 
-### Training Command
-
-```bash
-python train.py \
-  --model xgboost \
-  --epochs 100 \
-  --batch_size 64 \
-  --learning_rate 0.001 \
-  --early_stopping_patience 5
-```
-
-
