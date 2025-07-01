@@ -33,6 +33,26 @@ This project implements and compares multiple machine learning approaches to sol
    - No NaN values introduced by merges (verified with merged_data.isnull().sum())
    - Consistent dtypes across joins (verified with merged_data.dtypes)
 
+## Trade-offs of Merging Multiple Datasets
+
+While merging `train.csv`, `meal_info.csv`, and `fulfillment_center_info.csv` enriched the dataset, it introduced several important trade-offs. But despite these challenges, the merge was essential for capturing important relationships between meals, regions, and center operations. The richer feature space contributed significantly to model accuracy and robustness. How I manage it below:
+
+1. **Risk of Data Leakage**  
+Merging time-sensitive features from other tables can unintentionally introduce future information. This was avoided by excluding any aggregate or post-week data during merging.
+
+2. **Join Key Issues**
+Poorly managed joins can lead to dropped rows or duplication. To prevent this, we used `validate="many_to_one"` in pandas and confirmed full key alignment before merging.
+
+3. **Increased Dimensionality**  
+New features such as `region_meal_combo` added complexity, which can increase overfitting risk. This was mitigated using regularization techniques like L2 and dropout layers.
+
+4. **Preprocessing Overhead**  
+Combining datasets required handling differences in data types, resolving column name conflicts, and managing missing values across sources.
+
+5. **Higher Computational Cost**  
+A larger and more complex dataset resulted in longer training times, especially for neural networks. We adjusted batch size, learning rate, and epochs to balance training efficiency.
+
+
 ## Model Implementation Details
 
 ### Neural Network Architectures
