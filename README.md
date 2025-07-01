@@ -67,13 +67,13 @@ Sequential([
 
 ## Training Instances Analysis
 
-| Instance       | Optimizer | Regularization | Epochs | Early Stopping | LR    | Batch Size | Val MSE   | Val MAE | Training Time |
-|----------------|-----------|----------------|--------|----------------|-------|------------|-----------|---------|---------------|
-| Baseline       | Adam      | None           | 10     | No             | 0.001 | 32         | 39,368.04 | 92.60   | 2m 41s        |
-| Dropout30      | Adam      | Dropout(0.3)   | 20     | No             | 0.001 | 32         | 39,847.69 | 94.90   | 5m 22s        |
-| L2_Reg         | Adam      | L2(λ=0.01)     | 30     | No             | 0.001 | 32         | 38,116.50 | 92.90   | 8m 03s        |
-| EarlyStop      | Adam      | L2+Dropout     | 50     | Yes (patience=5)| 0.001 | 32         | 36,888.97 | 92.70   | 9m 18s        |
-| RMSProp        | RMSprop   | None           | 25     | No             | 0.0005| 64         | 41,225.33 | 95.12   | 6m 55s        |
+| Instance       | Optimizer | Regularization | Epochs | Early Stopping | LR    | Batch Size | Val MSE   | Val MAE |
+|----------------|-----------|----------------|--------|----------------|-------|------------|-----------|---------|
+| Baseline       | Adam      | None           | 10     | No             | 0.001 | 32         | 39,368.04 | 92.60   |
+| Dropout30      | Adam      | Dropout(0.3)   | 20     | No             | 0.001 | 32         | 39,847.69 | 94.90   |
+| L2_Reg         | Adam      | L2(λ=0.01)     | 30     | No             | 0.001 | 32         | 38,116.50 | 92.90   |
+| EarlyStop      | Adam      | L2+Dropout     | 50     | Yes (patience=5)| 0.001 | 32         | 36,888.97 | 92.70   |
+| RMSProp        | RMSprop   | None           | 25     | No             | 0.0005| 64         | 41,225.33 | 95.12   |
 
 ## Classical ML Models
 
