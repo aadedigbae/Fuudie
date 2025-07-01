@@ -2,11 +2,6 @@
 
 ## <a name="LInk to Video Presentation" href="https://www.loom.com/share/45e58e4575f84a12ab373b8c75ebfe3c?t=6&sid=0d212311-cb4d-41ab-8693-1159021a6395">Link to Video Presentation</a>
 
-# Advanced Meal Demand Forecasting System
-
-## Video Presentation
-[View Presentation](https://www.loom.com/share/45e58e4575f84a12ab373b8c75ebfe3c)
-
 ## Problem Statement
 This project implements and compares multiple machine learning approaches to solve a critical business problem: predicting daily meal order volumes for a food delivery platform operating across 77 fulfillment centers. The solution enables:
 
